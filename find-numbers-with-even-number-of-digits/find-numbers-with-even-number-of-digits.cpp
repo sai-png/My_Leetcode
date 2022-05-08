@@ -1,14 +1,16 @@
 class Solution {
 public:
     int findNumbers(vector<int>& nums) {
-        int n, count=0;
+        int n;
+        int count=0;
         for(int i=0;i<nums.size();i++)
         {
-        n=nums[i];
-        if((n>9 && n<100) || (n>999 && n<10000) || (n==100000))
-        {count++;}
-           
+            n=nums[i];
+            if((n>9 && n<100)or(n>999 and n<10000)or(n==100000))
+            {
+                count++;
             }
-   return count;
+        }
+        return count;
     }
 };

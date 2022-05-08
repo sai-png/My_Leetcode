@@ -5,8 +5,8 @@ public:
         int count=0;
         for(int i=0;i<nums.size();i++)
         {
-            n=nums[i];
-            if((n>9 && n<100)or(n>999 and n<10000)or(n==100000))
+            string res=to_string(nums[i]);
+            if(res.size()%2==0)
             {
                 count++;
             }

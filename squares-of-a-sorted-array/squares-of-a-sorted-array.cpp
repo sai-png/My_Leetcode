@@ -6,7 +6,7 @@ public:
         {
             nums[i]=nums[i]*nums[i];
         }
-       std::sort(nums.begin(),nums.end());
+       sort(nums.begin(),nums.end());
         return nums;
     }
 };

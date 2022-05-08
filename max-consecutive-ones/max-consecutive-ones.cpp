@@ -8,12 +8,12 @@ public:
             if (nums[i]==1)
             {
                 count++;
-                 maxi=max(count,maxi);
             }
             else
             {
                 count=0;
             }
+             maxi=max(count,maxi);
         }
         return maxi;
     }

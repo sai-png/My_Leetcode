@@ -6,7 +6,7 @@ public:
             if(operations[i]=="++X" || operations[i]=="X++")
                 X++;
             else
-                --X;
+                X--;
         }
         return X;
     }

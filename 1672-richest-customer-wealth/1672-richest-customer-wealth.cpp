@@ -7,7 +7,7 @@ public:
         for(int i=0;i<n;i++){
              int sum=0;
             for(int j=0;j<m;j++){
-                sum=sum+accounts[i][j];
+                sum+=accounts[i][j];
                 maxi=max(sum,maxi);
                 
             }

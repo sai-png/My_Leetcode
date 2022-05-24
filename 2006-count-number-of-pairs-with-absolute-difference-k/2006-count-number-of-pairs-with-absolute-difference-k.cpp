@@ -1,12 +1,14 @@
 class Solution {
 public:
-    vector<int> diStringMatch(string s) {
-        vector<int> res;
-
-        for (int i = 0, l = 0, r = s.size(); i <= s.size(); i++)
-        {
-            res.push_back(i == s.size() || s[i] == 'I' ? l++:r--);
+    int countKDifference(vector<int>& nums, int k) {
+       int count=0;
+        for(int i=0;i<nums.size();i++){
+            for(int j=i+1;j<nums.size();j++){
+                if(nums[i]-nums[j]==k or nums[j]-nums[i]==k){
+                    count++;
+                }
+            }
         }
-        return res;
+        return count;
     }
 };

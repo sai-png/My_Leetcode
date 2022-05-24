@@ -8,7 +8,8 @@ public:
          return ans;
      }
     bool arrayStringsAreEqual(vector<string>& word1, vector<string>& word2) {
-        return (add(word1)==add(word2)) ;
+        if(add(word1)==add(word2)) return true;
+        return false;
         
     }
 };

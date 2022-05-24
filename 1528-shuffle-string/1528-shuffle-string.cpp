@@ -1,14 +1,10 @@
-class Solution 
-{
+class Solution {
 public:
-    string restoreString(const string& s, vector<int>& indices) 
-    {
-        std::string res(s.length(), ' ');
-        for (int i = 0; i < indices.size(); i++)
-        {
-            res[indices[i]] = s[i];
+    string restoreString(string s, vector<int>& indices) {
+        string ans=s;
+        for(int i=0;i<indices.size();i++){
+        ans[indices[i]]=s[i];
         }
-        
-        return res;
+        return ans;
     }
 };

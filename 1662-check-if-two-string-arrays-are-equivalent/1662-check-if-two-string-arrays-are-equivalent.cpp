@@ -1,9 +1,10 @@
 class Solution {
 public:
      string add(vector<string>& newword){
-         string ans;
-         ans="";
-         for(auto w:newword) ans+=w;  
+         string ans="";
+         for(auto w:newword) {
+             ans+=w;
+         }  
          return ans;
      }
     bool arrayStringsAreEqual(vector<string>& word1, vector<string>& word2) {

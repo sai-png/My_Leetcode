@@ -1,16 +1,13 @@
 class Solution {
 public:
-     string add(vector<string>& newword){
-         string ans="";
-         for(auto w:newword) {
-             ans+=w;
-         }  
-         return ans;
-     }
+    string add(vector<string>& newword){
+        string res="";
+        for(auto w:newword)
+        res+=w;
+        return res;
+    }
     bool arrayStringsAreEqual(vector<string>& word1, vector<string>& word2) {
-        if(add(word1)==add(word2)) return true;
-        return false;
+        return add(word1)==add(word2);
         
     }
 };
-

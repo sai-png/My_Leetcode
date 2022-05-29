@@ -8,6 +8,8 @@ public:
             char c ='0' + i;
             if(num[i] != '0' + ans[c]){
                 return false;
+                
+                
             }
         }  
         return true;

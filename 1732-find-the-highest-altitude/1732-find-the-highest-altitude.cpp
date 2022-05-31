@@ -10,7 +10,7 @@ public:
         }
             if(max<0)
                 return 0;
-        else return max;
+        return max;
         
     }
     

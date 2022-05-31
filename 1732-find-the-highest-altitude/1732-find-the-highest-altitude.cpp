@@ -8,8 +8,7 @@ public:
         if(count>max)
           max=count;
         }
-            if(max<0)
-                return 0;
+            if(max<0) return 0;
         return max;
         
     }

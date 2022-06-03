@@ -3,8 +3,8 @@ public:
     vector<int> sortArrayByParityII(vector<int>& nums) 
     {
        int n=nums.size();
+        vector<int>ans;
        vector<int> even;
-        vector<int> ans;
         vector<int> odd;
        for(int i=0;i<n;i++)
        {

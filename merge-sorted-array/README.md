@@ -1,3 +1,4 @@
+[Discussion Post (created on 7/5/2022 at 6:50)](https://leetcode.com/problems/merge-sorted-array/discuss/2120227/c%2B%2B-0ms-runtime-beats-100-easy-clean-code)  
 <h2>  Merge Sorted Array</h2><hr><div><p>You are given two integer arrays <code>nums1</code> and <code>nums2</code>, sorted in <strong>non-decreasing order</strong>, and two integers <code>m</code> and <code>n</code>, representing the number of elements in <code>nums1</code> and <code>nums2</code> respectively.</p>
 
 <p><strong>Merge</strong> <code>nums1</code> and <code>nums2</code> into a single array sorted in <strong>non-decreasing order</strong>.</p>

@@ -7,7 +7,7 @@ public:
         int j=n-1;
         int sum=0;
         while(j>i){
-                    sum=numbers[i]+numbers[j];
+           sum=numbers[i]+numbers[j];
             if(sum==target){
                return{i+1,j+1};
             }

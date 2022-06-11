@@ -7,7 +7,7 @@ public:
         {
             sum = sum + nums[i];
         }
-        for(int i = 0;i<n;i++) // To calculate length of maximum subarray with 'sum = total sum - x'
+        for(int i = 0;i<n;i++)
         {
             res = res + nums[i];
             while((l<n) && (sum - x < res))

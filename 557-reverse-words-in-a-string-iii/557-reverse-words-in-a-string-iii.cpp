@@ -9,7 +9,7 @@ public:
                 j=i+1;
             }
         }
-        reverse(s.begin()+j,s.end()+i);
+        reverse(s.begin()+j,s.end());
         return s;
     }
 };

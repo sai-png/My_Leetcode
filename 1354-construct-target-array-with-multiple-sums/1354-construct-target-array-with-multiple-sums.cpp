@@ -11,7 +11,9 @@ public:
             pq.pop();
             sum-=x;
             if (x<= sum || sum < 1) return false;
-            x%= sum, sum+=x, pq.push(x?x: sum);
+            x%= sum;
+            sum+=x;
+            pq.push(x?x: sum);
         }
         return true;
     }

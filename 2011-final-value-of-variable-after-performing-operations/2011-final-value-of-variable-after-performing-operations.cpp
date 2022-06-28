@@ -7,7 +7,7 @@ public:
                 ans=ans+1;
             }
             else{
-                --ans;
+                ans=ans-1;
             }
         }
         return ans;

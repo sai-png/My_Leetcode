@@ -1,11 +1,11 @@
 class Solution {
 public:
     int numJewelsInStones(string j, string s) {
-        int count =0;
-        for(char x: s){
-            if(j.find(x)!=string::npos)
-                count++;
+        int ans=0;
+        for(char c: s){
+            if(j.find(c)!=string::npos)
+                ans++;
         }
-        return count;
+        return ans;
     }
 };

@@ -1,27 +1,22 @@
 class Solution {
 public:
-    string interpret(string command)
-    {
+    string interpret(string c) {
+        string s="";                     
         int i=0;
-        string s;
-        while(i<command.size())
-        {
-            if(command[i]=='G')
-            {
-                s.append("G");
-                i++;
-            }
-            else if(command[i]=='(' && command[i+1]==')')
-            {
-                s.append("o");
-                i+=2;
-            }
-            else
-            {
-                s.append("al");
-                i+=4;
-            }
-        }
+             while(i<c.length()){
+                 if(c[i]=='G'){
+                     s.append("G");
+                     i++;
+                 }
+                 else if(c[i]=='(' and c[i+1]==')'){
+                     s.append("o");
+                     i=i+2;
+                 }
+                 else{
+                     s.append("al");
+                     i+=4;
+                 }
+             }                   
         return s;
     }
 };

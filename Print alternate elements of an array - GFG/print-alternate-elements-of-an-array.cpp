@@ -14,10 +14,9 @@ using namespace std;
 // n is the number of elements in array.
 void print(int ar[], int n)
 {
-    int i=0;
-   while(i<n){
+  for(int i=0;i<n;i+=2)
+   {
        cout<<ar[i]<<" ";
-       i = i+2;
    }
 }
 

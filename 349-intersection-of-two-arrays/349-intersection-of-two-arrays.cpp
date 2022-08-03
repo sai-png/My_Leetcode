@@ -1,14 +1,20 @@
 class Solution {
 public:
     vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
-        vector<int>ans;
-        set<int>s1(nums1.begin(),nums1.end());
-        set<int>s2(nums2.begin(),nums2.end());
-        for(auto x: s1){
-            if(s2.find(x)!=s2.end()){
-                ans.push_back(x);
+    set<int> st;        
+    for(int itr = 0; itr < nums1.size(); itr++){
+        for(int jtr = 0; jtr < nums2.size(); jtr++){
+            if(nums1[itr] == nums2[jtr]){
+                st.insert(nums1[itr]);
+                break;
             }
         }
-        return ans;
     }
+    
+    vector<int> vt;
+    for(auto itr = st.begin(); itr != st.end(); itr++){
+        vt.push_back(*itr);
+    }
+    return vt;
+}
 };
